@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen on Docker for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "hostname": "0.0.0.0",
+            "pathMappings": {
+                // "/var/www/html/": "${workspaceFolder}/wordpress"
+                 "/var/www/html": "${workspaceFolder}/wordpress"
+            },
+            "env": {
+                "XDEBUG_MODE": "debug,develop",
+                "XDEBUG_CONFIG": "client_port=${port}"
+            },
+            // "log": true
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 0,
+            "runtimeArgs": [
+                "-dxdebug.start_with_request=yes"
+            ],
+            "env": {
+                "XDEBUG_MODE": "debug,develop",
+                "XDEBUG_CONFIG": "client_port=${port}"
+            }
+        },
+    ]
+}
