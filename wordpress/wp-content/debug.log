@@ -1,0 +1,286 @@
+[28-Nov-2024 00:26:12 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No route to host in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:26:12 UTC] PHP Stack trace:
+[28-Nov-2024 00:26:12 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:26:12 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:26:12 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:13
+[28-Nov-2024 00:26:12 UTC] PHP   4. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:26:12 UTC] PHP   5. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:26:12 UTC] PHP   6. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:26:12 UTC] PHP   7. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:26:12 UTC] PHP   8. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:26:12 UTC] PHP   9. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2002; public $connect_error = 'No route to host'; public $errno = 2002; public $error = 'No route to host' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:43 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=19 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:43 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:43 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:40:43 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:40:43 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:43 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:43 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:43 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:43 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:43 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:43 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:43 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:43 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:40:43 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:40:43 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:43 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:43 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:43 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:43 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:43 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:48 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=21 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:48 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:48 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:40:48 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:40:48 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:48 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:48 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:48 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:48 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:48 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:48 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:48 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:40:48 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:40:48 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:48 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:48 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:48 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:48 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:48 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:52 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=22 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:52 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:52 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:40:52 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:40:52 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:13
+[28-Nov-2024 00:40:52 UTC] PHP   4. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:52 UTC] PHP   5. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:52 UTC] PHP   6. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:52 UTC] PHP   7. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:52 UTC] PHP   8. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:52 UTC] PHP   9. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:40:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:40:52 UTC] PHP Stack trace:
+[28-Nov-2024 00:40:52 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:40:52 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:40:52 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:13
+[28-Nov-2024 00:40:52 UTC] PHP   4. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:40:52 UTC] PHP   5. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:40:52 UTC] PHP   6. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:40:52 UTC] PHP   7. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:40:52 UTC] PHP   8. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:40:52 UTC] PHP   9. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:31 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=19 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:31 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:31 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:31 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:31 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:31 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:31 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:31 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:31 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:31 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:31 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:31 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:31 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:31 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:31 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:31 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:31 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:31 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:31 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:31 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:36 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=20 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:36 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:36 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:36 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:36 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:36 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:36 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:36 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:36 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:36 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:36 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:36 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:36 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:36 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:36 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:36 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:36 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:37 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=21 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:37 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:37 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:37 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:37 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:37 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:37 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:37 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:37 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:37 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:37 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:37 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:37 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:37 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:37 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:37 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:37 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:37 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:37 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:45 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=23 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:45 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:45 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:45 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:45 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:45 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:45 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:45 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:45 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:45 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:42:45 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:42:45 UTC] PHP Stack trace:
+[28-Nov-2024 00:42:45 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:42:45 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:42:45 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:42:45 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:42:45 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:42:45 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:42:45 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:42:45 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:48:36 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=19 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:48:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:48:36 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:48:36 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:48:36 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:48:36 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:48:36 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:48:36 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:48:36 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:48:36 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:48:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:48:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:48:36 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:48:36 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:48:36 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:48:36 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:48:36 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:48:36 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:48:36 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:48:36 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:49:11 UTC] PHP Warning:  mysqli_real_connect(): Error while reading greeting packet. PID=20 in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:49:11 UTC] PHP Stack trace:
+[28-Nov-2024 00:49:11 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:49:11 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:49:11 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:49:11 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:49:11 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:49:11 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:49:11 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:49:11 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 0; public $connect_error = NULL; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:49:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in /var/www/html/wp-includes/class-wpdb.php on line 1982
+[28-Nov-2024 00:49:11 UTC] PHP Stack trace:
+[28-Nov-2024 00:49:11 UTC] PHP   1. {main}() /var/www/html/wp-login.php:0
+[28-Nov-2024 00:49:11 UTC] PHP   2. require() /var/www/html/wp-login.php:12
+[28-Nov-2024 00:49:11 UTC] PHP   3. require_once() /var/www/html/wp-load.php:50
+[28-Nov-2024 00:49:11 UTC] PHP   4. require_once() /var/www/html/wp-config.php:197
+[28-Nov-2024 00:49:11 UTC] PHP   5. require_wp_db() /var/www/html/wp-settings.php:132
+[28-Nov-2024 00:49:11 UTC] PHP   6. wpdb->__construct($dbuser = 'wordpress_user', $dbpassword = 'secret', $dbname = 'wordpress', $dbhost = '172.26.96.1:3009') /var/www/html/wp-includes/load.php:697
+[28-Nov-2024 00:49:11 UTC] PHP   7. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/class-wpdb.php:767
+[28-Nov-2024 00:49:11 UTC] PHP   8. mysqli_real_connect($mysql = class mysqli { public $client_info = 'mysqlnd 8.2.23'; public $client_version = 80223; public $connect_errno = 2006; public $connect_error = 'MySQL server has gone away'; public $errno = 2006; public $error = 'MySQL server has gone away' }, $hostname = '172.26.96.1', $username = 'wordpress_user', $password = '[Sensitive Parameter]', $database = NULL, $port = 3009, $socket = NULL, $flags = 0) /var/www/html/wp-includes/class-wpdb.php:1982
+[28-Nov-2024 00:56:29 UTC] auditor:event=wp_login {"user_id":37,"blog_id":1,"event":"wp_login","current_user_id":0,"remote_addr":"192.168.0.1"}
+[28-Nov-2024 00:56:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php on line 741
+[28-Nov-2024 00:56:30 UTC] PHP Stack trace:
+[28-Nov-2024 00:56:30 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:56:30 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:56:30 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:19
+[28-Nov-2024 00:56:30 UTC] PHP   4. include() /var/www/html/wp-includes/template-loader.php:106
+[28-Nov-2024 00:56:30 UTC] PHP   5. get_footer($name = *uninitialized*, $args = *uninitialized*) /var/www/html/wp-content/themes/Divi/page.php:75
+[28-Nov-2024 00:56:30 UTC] PHP   6. do_action($hook_name = 'get_footer', ...$arg = variadic(NULL, [])) /var/www/html/wp-includes/general-template.php:82
+[28-Nov-2024 00:56:30 UTC] PHP   7. WP_Hook->do_action($args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:30 UTC] PHP   8. WP_Hook->apply_filters($value = '', $args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP   9. et_theme_builder_frontend_override_footer($name = NULL) /var/www/html/wp-includes/class-wp-hook.php:326
+[28-Nov-2024 00:56:30 UTC] PHP  10. et_theme_builder_frontend_override_partial($partial = 'footer', $name = NULL, $action = 'wp_footer') /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:260
+[28-Nov-2024 00:56:30 UTC] PHP  11. require_once() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:216
+[28-Nov-2024 00:56:30 UTC] PHP  12. wp_footer() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend-footer-template.php:18
+[28-Nov-2024 00:56:30 UTC] PHP  13. do_action($hook_name = 'wp_footer') /var/www/html/wp-includes/general-template.php:3081
+[28-Nov-2024 00:56:30 UTC] PHP  14. WP_Hook->do_action($args = [0 => '']) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:30 UTC] PHP  15. WP_Hook->apply_filters($value = '', $args = [0 => '']) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP  16. wp_admin_bar_render('') /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:30 UTC] PHP  17. do_action_ref_array($hook_name = 'admin_bar_menu', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/admin-bar.php:95
+[28-Nov-2024 00:56:30 UTC] PHP  18. WP_Hook->do_action($args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/plugin.php:565
+[28-Nov-2024 00:56:30 UTC] PHP  19. WP_Hook->apply_filters($value = '', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP  20. WpeCommon->wpe_adminbar(class WP_Admin_Bar { private $nodes = ['user-actions' => class stdClass { ... }, 'user-info' => class stdClass { ... }, 'logout' => class stdClass { ... }, 'wp-logo' => class stdClass { ... }, 'about' => class stdClass { ... }, 'contribute' => class stdClass { ... }, 'wporg' => class stdClass { ... }, 'documentation' => class stdClass { ... }, 'learn' => class stdClass { ... }, 'support-forums' => class stdClass { ... }, 'feedback' => class stdClass { ... }, 'site-name' => class stdClass { ... }, 'dashboard' => class stdClass { ... }, 'appearance' => class stdClass { ... }, 'themes' => class stdClass { ... }, 'widgets' => class stdClass { ... }, 'menus' => class stdClass { ... }, 'background' => class stdClass { ... }, 'plugins' => class stdClass { ... }, 'customize' => class stdClass { ... }, 'updates' => class stdClass { ... }, 'comments' => class stdClass { ... }, 'new-content' => class stdClass { ... }, 'new-post' => class stdClass { ... }, 'new-media' => class stdClass { ... }, 'new-page' => class stdClass { ... }, 'new-project' => class stdClass { ... }, 'new-wppopups-templates' => class stdClass { ... }, 'new-user' => class stdClass { ... }, 'cdp-copy-bar-x' => class stdClass { ... }, 'wpengine_adminbar' => class stdClass { ... }, 'wpengine_adminbar_status' => class stdClass { ... }, 'wpengine_adminbar_faq' => class stdClass { ... }, 'wpengine_adminbar_support' => class stdClass { ... }]; private $bound = FALSE; public $user = class stdClass { public $blogs = [...]; public $active_blog = class stdClass { ... }; public $domain = 'http://localhost:4001/'; public $account_domain = 'http://localhost:4001/' }; public $menu = [] }) /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:30 UTC] PHP  21. WpeCommon->get_error_log_url($production = *uninitialized*) /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php:385
+[28-Nov-2024 00:56:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php on line 741
+[28-Nov-2024 00:56:30 UTC] PHP Stack trace:
+[28-Nov-2024 00:56:30 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:56:30 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:56:30 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:19
+[28-Nov-2024 00:56:30 UTC] PHP   4. include() /var/www/html/wp-includes/template-loader.php:106
+[28-Nov-2024 00:56:30 UTC] PHP   5. get_footer($name = *uninitialized*, $args = *uninitialized*) /var/www/html/wp-content/themes/Divi/page.php:75
+[28-Nov-2024 00:56:30 UTC] PHP   6. do_action($hook_name = 'get_footer', ...$arg = variadic(NULL, [])) /var/www/html/wp-includes/general-template.php:82
+[28-Nov-2024 00:56:30 UTC] PHP   7. WP_Hook->do_action($args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:30 UTC] PHP   8. WP_Hook->apply_filters($value = '', $args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP   9. et_theme_builder_frontend_override_footer($name = NULL) /var/www/html/wp-includes/class-wp-hook.php:326
+[28-Nov-2024 00:56:30 UTC] PHP  10. et_theme_builder_frontend_override_partial($partial = 'footer', $name = NULL, $action = 'wp_footer') /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:260
+[28-Nov-2024 00:56:30 UTC] PHP  11. require_once() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:216
+[28-Nov-2024 00:56:30 UTC] PHP  12. wp_footer() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend-footer-template.php:18
+[28-Nov-2024 00:56:30 UTC] PHP  13. do_action($hook_name = 'wp_footer') /var/www/html/wp-includes/general-template.php:3081
+[28-Nov-2024 00:56:30 UTC] PHP  14. WP_Hook->do_action($args = [0 => '']) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:30 UTC] PHP  15. WP_Hook->apply_filters($value = '', $args = [0 => '']) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP  16. wp_admin_bar_render('') /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:30 UTC] PHP  17. do_action_ref_array($hook_name = 'admin_bar_menu', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/admin-bar.php:95
+[28-Nov-2024 00:56:30 UTC] PHP  18. WP_Hook->do_action($args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/plugin.php:565
+[28-Nov-2024 00:56:30 UTC] PHP  19. WP_Hook->apply_filters($value = '', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:30 UTC] PHP  20. WpeCommon->wpe_adminbar(class WP_Admin_Bar { private $nodes = ['user-actions' => class stdClass { ... }, 'user-info' => class stdClass { ... }, 'logout' => class stdClass { ... }, 'wp-logo' => class stdClass { ... }, 'about' => class stdClass { ... }, 'contribute' => class stdClass { ... }, 'wporg' => class stdClass { ... }, 'documentation' => class stdClass { ... }, 'learn' => class stdClass { ... }, 'support-forums' => class stdClass { ... }, 'feedback' => class stdClass { ... }, 'site-name' => class stdClass { ... }, 'dashboard' => class stdClass { ... }, 'appearance' => class stdClass { ... }, 'themes' => class stdClass { ... }, 'widgets' => class stdClass { ... }, 'menus' => class stdClass { ... }, 'background' => class stdClass { ... }, 'plugins' => class stdClass { ... }, 'customize' => class stdClass { ... }, 'updates' => class stdClass { ... }, 'comments' => class stdClass { ... }, 'new-content' => class stdClass { ... }, 'new-post' => class stdClass { ... }, 'new-media' => class stdClass { ... }, 'new-page' => class stdClass { ... }, 'new-project' => class stdClass { ... }, 'new-wppopups-templates' => class stdClass { ... }, 'new-user' => class stdClass { ... }, 'cdp-copy-bar-x' => class stdClass { ... }, 'wpengine_adminbar' => class stdClass { ... }, 'wpengine_adminbar_status' => class stdClass { ... }, 'wpengine_adminbar_faq' => class stdClass { ... }, 'wpengine_adminbar_support' => class stdClass { ... }]; private $bound = FALSE; public $user = class stdClass { public $blogs = [...]; public $active_blog = class stdClass { ... }; public $domain = 'http://localhost:4001/'; public $account_domain = 'http://localhost:4001/' }; public $menu = [] }) /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:30 UTC] PHP  21. WpeCommon->get_error_log_url($production = *uninitialized*) /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php:385
+[28-Nov-2024 00:56:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php on line 741
+[28-Nov-2024 00:56:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:56:36 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:56:36 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:56:36 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:19
+[28-Nov-2024 00:56:36 UTC] PHP   4. include() /var/www/html/wp-includes/template-loader.php:106
+[28-Nov-2024 00:56:36 UTC] PHP   5. get_footer($name = *uninitialized*, $args = *uninitialized*) /var/www/html/wp-content/themes/Divi/page.php:75
+[28-Nov-2024 00:56:36 UTC] PHP   6. do_action($hook_name = 'get_footer', ...$arg = variadic(NULL, [])) /var/www/html/wp-includes/general-template.php:82
+[28-Nov-2024 00:56:36 UTC] PHP   7. WP_Hook->do_action($args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:36 UTC] PHP   8. WP_Hook->apply_filters($value = '', $args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP   9. et_theme_builder_frontend_override_footer($name = NULL) /var/www/html/wp-includes/class-wp-hook.php:326
+[28-Nov-2024 00:56:36 UTC] PHP  10. et_theme_builder_frontend_override_partial($partial = 'footer', $name = NULL, $action = 'wp_footer') /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:260
+[28-Nov-2024 00:56:36 UTC] PHP  11. require_once() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:216
+[28-Nov-2024 00:56:36 UTC] PHP  12. wp_footer() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend-footer-template.php:18
+[28-Nov-2024 00:56:36 UTC] PHP  13. do_action($hook_name = 'wp_footer') /var/www/html/wp-includes/general-template.php:3081
+[28-Nov-2024 00:56:36 UTC] PHP  14. WP_Hook->do_action($args = [0 => '']) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:36 UTC] PHP  15. WP_Hook->apply_filters($value = '', $args = [0 => '']) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP  16. wp_admin_bar_render('') /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:36 UTC] PHP  17. do_action_ref_array($hook_name = 'admin_bar_menu', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/admin-bar.php:95
+[28-Nov-2024 00:56:36 UTC] PHP  18. WP_Hook->do_action($args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/plugin.php:565
+[28-Nov-2024 00:56:36 UTC] PHP  19. WP_Hook->apply_filters($value = '', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP  20. WpeCommon->wpe_adminbar(class WP_Admin_Bar { private $nodes = ['user-actions' => class stdClass { ... }, 'user-info' => class stdClass { ... }, 'logout' => class stdClass { ... }, 'wp-logo' => class stdClass { ... }, 'about' => class stdClass { ... }, 'contribute' => class stdClass { ... }, 'wporg' => class stdClass { ... }, 'documentation' => class stdClass { ... }, 'learn' => class stdClass { ... }, 'support-forums' => class stdClass { ... }, 'feedback' => class stdClass { ... }, 'site-name' => class stdClass { ... }, 'dashboard' => class stdClass { ... }, 'appearance' => class stdClass { ... }, 'themes' => class stdClass { ... }, 'widgets' => class stdClass { ... }, 'menus' => class stdClass { ... }, 'background' => class stdClass { ... }, 'plugins' => class stdClass { ... }, 'customize' => class stdClass { ... }, 'updates' => class stdClass { ... }, 'comments' => class stdClass { ... }, 'new-content' => class stdClass { ... }, 'new-post' => class stdClass { ... }, 'new-media' => class stdClass { ... }, 'new-page' => class stdClass { ... }, 'new-project' => class stdClass { ... }, 'new-wppopups-templates' => class stdClass { ... }, 'new-user' => class stdClass { ... }, 'cdp-copy-bar-x' => class stdClass { ... }, 'wpengine_adminbar' => class stdClass { ... }, 'wpengine_adminbar_status' => class stdClass { ... }, 'wpengine_adminbar_faq' => class stdClass { ... }, 'wpengine_adminbar_support' => class stdClass { ... }]; private $bound = FALSE; public $user = class stdClass { public $blogs = [...]; public $active_blog = class stdClass { ... }; public $domain = 'http://localhost:4001/'; public $account_domain = 'http://localhost:4001/' }; public $menu = [] }) /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:36 UTC] PHP  21. WpeCommon->get_error_log_url($production = *uninitialized*) /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php:385
+[28-Nov-2024 00:56:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php on line 741
+[28-Nov-2024 00:56:36 UTC] PHP Stack trace:
+[28-Nov-2024 00:56:36 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[28-Nov-2024 00:56:36 UTC] PHP   2. require() /var/www/html/index.php:16
+[28-Nov-2024 00:56:36 UTC] PHP   3. require_once() /var/www/html/wp-blog-header.php:19
+[28-Nov-2024 00:56:36 UTC] PHP   4. include() /var/www/html/wp-includes/template-loader.php:106
+[28-Nov-2024 00:56:36 UTC] PHP   5. get_footer($name = *uninitialized*, $args = *uninitialized*) /var/www/html/wp-content/themes/Divi/page.php:75
+[28-Nov-2024 00:56:36 UTC] PHP   6. do_action($hook_name = 'get_footer', ...$arg = variadic(NULL, [])) /var/www/html/wp-includes/general-template.php:82
+[28-Nov-2024 00:56:36 UTC] PHP   7. WP_Hook->do_action($args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:36 UTC] PHP   8. WP_Hook->apply_filters($value = '', $args = [0 => NULL, 1 => []]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP   9. et_theme_builder_frontend_override_footer($name = NULL) /var/www/html/wp-includes/class-wp-hook.php:326
+[28-Nov-2024 00:56:36 UTC] PHP  10. et_theme_builder_frontend_override_partial($partial = 'footer', $name = NULL, $action = 'wp_footer') /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:260
+[28-Nov-2024 00:56:36 UTC] PHP  11. require_once() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend.php:216
+[28-Nov-2024 00:56:36 UTC] PHP  12. wp_footer() /var/www/html/wp-content/themes/Divi/includes/builder/frontend-builder/theme-builder/frontend-footer-template.php:18
+[28-Nov-2024 00:56:36 UTC] PHP  13. do_action($hook_name = 'wp_footer') /var/www/html/wp-includes/general-template.php:3081
+[28-Nov-2024 00:56:36 UTC] PHP  14. WP_Hook->do_action($args = [0 => '']) /var/www/html/wp-includes/plugin.php:517
+[28-Nov-2024 00:56:36 UTC] PHP  15. WP_Hook->apply_filters($value = '', $args = [0 => '']) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP  16. wp_admin_bar_render('') /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:36 UTC] PHP  17. do_action_ref_array($hook_name = 'admin_bar_menu', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/admin-bar.php:95
+[28-Nov-2024 00:56:36 UTC] PHP  18. WP_Hook->do_action($args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/plugin.php:565
+[28-Nov-2024 00:56:36 UTC] PHP  19. WP_Hook->apply_filters($value = '', $args = [0 => class WP_Admin_Bar { private $nodes = [...]; private $bound = FALSE; public $user = class stdClass { ... }; public $menu = [...] }]) /var/www/html/wp-includes/class-wp-hook.php:348
+[28-Nov-2024 00:56:36 UTC] PHP  20. WpeCommon->wpe_adminbar(class WP_Admin_Bar { private $nodes = ['user-actions' => class stdClass { ... }, 'user-info' => class stdClass { ... }, 'logout' => class stdClass { ... }, 'wp-logo' => class stdClass { ... }, 'about' => class stdClass { ... }, 'contribute' => class stdClass { ... }, 'wporg' => class stdClass { ... }, 'documentation' => class stdClass { ... }, 'learn' => class stdClass { ... }, 'support-forums' => class stdClass { ... }, 'feedback' => class stdClass { ... }, 'site-name' => class stdClass { ... }, 'dashboard' => class stdClass { ... }, 'appearance' => class stdClass { ... }, 'themes' => class stdClass { ... }, 'widgets' => class stdClass { ... }, 'menus' => class stdClass { ... }, 'background' => class stdClass { ... }, 'plugins' => class stdClass { ... }, 'customize' => class stdClass { ... }, 'updates' => class stdClass { ... }, 'comments' => class stdClass { ... }, 'new-content' => class stdClass { ... }, 'new-post' => class stdClass { ... }, 'new-media' => class stdClass { ... }, 'new-page' => class stdClass { ... }, 'new-project' => class stdClass { ... }, 'new-wppopups-templates' => class stdClass { ... }, 'new-user' => class stdClass { ... }, 'cdp-copy-bar-x' => class stdClass { ... }, 'wpengine_adminbar' => class stdClass { ... }, 'wpengine_adminbar_status' => class stdClass { ... }, 'wpengine_adminbar_faq' => class stdClass { ... }, 'wpengine_adminbar_support' => class stdClass { ... }]; private $bound = FALSE; public $user = class stdClass { public $blogs = [...]; public $active_blog = class stdClass { ... }; public $domain = 'http://localhost:4001/'; public $account_domain = 'http://localhost:4001/' }; public $menu = [] }) /var/www/html/wp-includes/class-wp-hook.php:324
+[28-Nov-2024 00:56:36 UTC] PHP  21. WpeCommon->get_error_log_url($production = *uninitialized*) /var/www/html/wp-content/mu-plugins/wpengine-common/plugin.php:385
