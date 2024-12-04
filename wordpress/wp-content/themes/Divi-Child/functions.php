@@ -115,6 +115,7 @@ function custom_refresh_jwt_token(WP_REST_Request $request) {
 
 
 // Add Launch Button
+/*
 function add_launch_button() {
     if (is_user_logged_in()) {
         $user = wp_get_current_user();
@@ -124,7 +125,7 @@ function add_launch_button() {
 }
 
 add_action('wp_footer', 'add_launch_button');
-
+*/
 
 // Add account ID field to user profile
 function add_account_id_field($user) {
@@ -143,6 +144,8 @@ function add_account_id_field($user) {
 add_action('show_user_profile', 'add_account_id_field');
 add_action('edit_user_profile', 'add_account_id_field');
 
+
+ 
 // Save account ID field
 function save_account_id_field($user_id) {
     if (!current_user_can('edit_user', $user_id)) {
@@ -715,6 +718,10 @@ function get_users_countries(WP_REST_Request $request) {
     ), 200);
 }
 
+ 
+
+
+
 
 add_action('rest_api_init', function () {
     register_rest_route('custom/v1', '/createUser', array(
@@ -760,6 +767,33 @@ add_action('rest_api_init', function () {
     ));
 });
 
+
+ 
+function wpf_open_licensing_app_button() {
+    if ( is_user_logged_in() ) {
+        $user = wp_get_current_user();   
+        $tokens = generate_jwt($user);
+        
+        // $link = WORDPRESS_REACT_APP_HOST . '/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ;
+        $url = 'https://licensing-app-0bd1e4ab8f0e.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // BEFORE
+		
+		   $url = 'https://licensing-manager-app-5d8bb04c0b66.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // NEWEST
+		
+        // $items .= '<li><a href="'. $link .'" target="_black">Licensing</a></li>';
+        echo '<style>#wpf_open_licensing_app_button { display: block; }</style>';
+        echo '<script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.getElementById("wpf_open_licensing_app_button").onclick = function() {
+                        window.location.href = "' . $url . '";
+                    };
+                });
+              </script>';
+    } else {
+        echo '<style>#wpf_open_licensing_app_button { display: none; }</style>';
+    }
+}
+// Hook the function to wp_footer so it runs in the footer of the site
+add_action('wp_footer', 'wpf_open_licensing_app_button');
 
 # ****************************************************************
 

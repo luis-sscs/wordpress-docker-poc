@@ -33,11 +33,11 @@ function generate_jwt($user) {
 }
 
 // Add Launch Button
-function add_launch_button() {
-    if (is_user_logged_in()) {
-        $user = wp_get_current_user();
-        $jwt = generate_jwt($user);
-        echo '<a href="http://localhost:3000?token=' . $jwt . '">Launch App</a>'; // Change this when website is hosted
-    }
-}
-add_action('wp_footer', 'add_launch_button');
+// function add_launch_button() {
+//     if (is_user_logged_in()) {
+//         $user = wp_get_current_user();
+//         $jwt = generate_jwt($user);
+//         echo '<a href="http://localhost:3000?token=' . $jwt . '">Launch App</a>'; // Change this when website is hosted
+//     }
+// }
+// add_action('wp_footer', 'add_launch_button');

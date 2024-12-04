@@ -1,7 +1,8 @@
 # lemoine-wordpress-dockerized
 PHP version: 8.2
 Wordpress version: 6.6.1
-
+>> Official Project 
+https://github.com/Lemoine-Mach2d-Solutions-INC/lemoine-wordpress-dockerized
 
 
 # Installing Docker and WSL and Building container
