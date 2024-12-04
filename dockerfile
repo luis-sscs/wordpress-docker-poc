@@ -30,6 +30,16 @@ RUN pecl install xdebug && docker-php-ext-enable xdebug
 # Copy custom php.ini settings (if any)
 # COPY php.ini /usr/local/etc/php/
 
+# --------------------------------- to allow linux to write files when using WSL in vs code
+# Set www-data to have UID 1000
+# RUN usermod -u 1000 www-data;
+
+# # Add `www-data` to group `appuser`
+# RUN addgroup --gid 1000 appuser; \
+#   adduser --uid 1000 --gid 1000 --disabled-password appuser; \
+#   adduser www-data appuser;
+# ---------------------------------
+
 # Copy files from the local wordpress directory to the container
 COPY wordpress/ /var/www/html/
 
