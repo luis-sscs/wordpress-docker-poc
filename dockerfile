@@ -1,45 +1,66 @@
+# Use the official WordPress image as the base image
+FROM wordpress:6.6.1-php8.2
+
 # Use the official Ubuntu 20.04 as the base image
-FROM ubuntu:20.04
+# FROM ubuntu:20.04
 
-# Set environment variables to avoid interactive prompts during package installation
-ENV DEBIAN_FRONTEND=noninteractive
+# # Set environment variables to avoid interactive prompts during package installation
+# ENV DEBIAN_FRONTEND=noninteractive
 
-# Update the package list and install necessary packages
-RUN apt-get update && \
-    apt-get install -y apache2 \
-                       php7.4 \
-                       php7.4-mysql \
-                       libapache2-mod-php7.4 \
-                       wget \
-                       unzip \
-                       curl \
-                       openssl && \
-    apt-get clean
+# # Update the package list and install necessary packages
+# RUN apt-get update && \
+#     apt-get install -y apache2 \
+#                        php7.4 \
+#                        php7.4-mysql \
+#                        libapache2-mod-php7.4 \
+#                        wget \
+#                        unzip \
+#                        curl \
+#                        openssl && \
+#     apt-get clean
 
-# Enable Apache modules
-RUN a2enmod rewrite ssl
 
-# Generate a self-signed SSL certificate
-RUN mkdir -p /etc/apache2/ssl && \
-    openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-    -keyout /etc/apache2/ssl/apache.key \
-    -out /etc/apache2/ssl/apache.crt \
-    -subj "/C=US/ST=State/L=City/O=Organization/OU=Department/CN=localhost"
+# Install Xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 
-# Download and extract WordPress
-RUN wget https://wordpress.org/latest.zip -O /tmp/wordpress.zip && \
-    unzip /tmp/wordpress.zip -d /var/www/html/ && \
-    mv /var/www/html/wordpress/* /var/www/html/ && \
-    rmdir /var/www/html/wordpress && \
-    chown -R www-data:www-data /var/www/html && \
-    chmod -R 755 /var/www/html
+# Install Xdebug
+# RUN pecl install xdebug-3.1.0 \
+#     && docker-php-ext-enable xdebug
 
-# Copy the default Apache configuration file
-COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
-COPY default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
+# Copy custom php.ini settings (if any)
+# COPY php.ini /usr/local/etc/php/
 
-# Expose ports 80 and 443
-EXPOSE 80 443
+# --------------------------------- to allow linux to write files when using WSL in vs code
+# Set www-data to have UID 1000
+# RUN usermod -u 1000 www-data;
 
-# Start Apache in the foreground
-CMD ["apachectl", "-D", "FOREGROUND"]
+# # Add `www-data` to group `appuser`
+# RUN addgroup --gid 1000 appuser; \
+#   adduser --uid 1000 --gid 1000 --disabled-password appuser; \
+#   adduser www-data appuser;
+# ---------------------------------
+
+# Copy files from the local wordpress directory to the container
+COPY wordpress/ /var/www/html/
+
+# Set working directory and copy source
+# WORKDIR /var/www/html
+# COPY . .
+
+# Configure Apache
+RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+RUN sed -E -i -e 's/#ServerName www.example.com/ServerName localhost/' /etc/apache2/sites-enabled/000-default.conf
+
+# Copy custom Apache configuration
+COPY ./docker/apache-custom.conf /etc/apache2/conf-available/
+# Enable the custom Apache configuration
+# RUN a2enconf apache-custom
+
+# Debug settings
+COPY ./docker/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+COPY ./docker/error_reporting.ini /usr/local/etc/php/conf.d/error_reporting.ini
+
+
+# Enable mod rewrite and restart apache
+RUN a2enconf apache-custom && a2enmod rewrite && a2enmod socache_shmcb && service apache2 restart 
+# RUN a2enmod rewrite && a2enmod ssl && a2ensite default-ssl && a2enmod socache_shmcb && service apache2 restart
