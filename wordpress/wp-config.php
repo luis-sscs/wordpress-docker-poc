@@ -47,6 +47,7 @@ define('DB_USER', getenv_docker('WORDPRESS_DB_USER',  'wordpress_user'));
 define('DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD',  'secret'));
 define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST_PORT',  '127.0.0.1:3306'));
 define( 'DB_HOST_SLAVE', getenv_docker('WORDPRESS_DB_HOST_PORT',  '127.0.0.1:3306'));
+define( 'WORDPRESS_REACT_APP_HOST', getenv_docker('WORDPRESS_REACT_APP_HOST',  "http://localhost:3000"));
 
 define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );

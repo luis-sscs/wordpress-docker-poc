@@ -774,10 +774,10 @@ function wpf_open_licensing_app_button() {
         $user = wp_get_current_user();   
         $tokens = generate_jwt($user);
         
-        // $link = WORDPRESS_REACT_APP_HOST . '/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ;
-        $url = 'https://licensing-app-0bd1e4ab8f0e.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // BEFORE
+        $url = WORDPRESS_REACT_APP_HOST . '/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ;
+        // $url = 'https://licensing-app-0bd1e4ab8f0e.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // BEFORE
 		
-		   $url = 'https://licensing-manager-app-5d8bb04c0b66.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // NEWEST
+		//    $url = 'https://licensing-manager-app-5d8bb04c0b66.herokuapp.com/?access_token=' . $tokens['access_token'] . '&refresh_token=' . $tokens['refresh_token'] ; // NEWEST
 		
         // $items .= '<li><a href="'. $link .'" target="_black">Licensing</a></li>';
         echo '<style>#wpf_open_licensing_app_button { display: block; }</style>';

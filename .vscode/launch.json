@@ -11,10 +11,10 @@
                 // "/var/www/html/": "${workspaceFolder}/wordpress"
                  "/var/www/html": "${workspaceFolder}/wordpress"
             },
-            "env": {
-                "XDEBUG_MODE": "debug,develop",
-                "XDEBUG_CONFIG": "client_port=${port}"
-            },
+            // "env": {
+            //     "XDEBUG_MODE": "debug,develop",
+            //     "XDEBUG_CONFIG": "client_port=${port}"
+            // },
             // "log": true
         },
         {
